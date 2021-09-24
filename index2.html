@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, 
+  maximum-scale=1.0, minimum-scale=1.0">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
+</head>
+
+<body>
+<header id="header" class="starter">
+  <div class="starter-content">
+    <div class="hd01">M4BT</div>
+    <nav class="hd02"> <span class="hd03">더하트컴퍼니</span> </nav>
+  </div>
+  <div class="bot_fix pgs-s">
+    <div class="progress">
+      <div class="progress-bar pgs-bar" role="progressbar" style="width: calc(100/96*1%);"> 10%</div>
+    </div>
+  </div>
+</header>
+<div class="container-fluid">
+  <main class="container">
+	  <article class="first">
+      <div class="content">본 검사는 엄마인 여성의 라이프스타일을 일, 육아, 자아 및 대인관계 4가지 영역을 분석하여 육아와 진로의 방향성을 제시하고 엄마인 여성의 삶의 행복감을 향상하는데 도움이 되기 위한 검사입니다. <br>
+        <br>
+        본 검사의 응답은 옳고 그름의 정답이 있지 않습니다. 좋은 엄마, 나쁜 엄마 등 우월하고 열등한 부분을 평가하는 것도 아닙니다. 자신의 고유한 라이프스타일을 점검하고 나 자신의 모습을 실생활에서 어떻게 적용할지에 대한 부분을 파악하는데 도움이 됩니다.<br>
+        <br>
+        시간 제한은 없으나 어느 한 문항에 대해서 너무 오래 생각하지 마세요. 의식적으로 일관성 있게 응답하려 하지 말고 자연스럽게 응답해주시면 됩니다. <br>
+        <br>
+        평소 자신의 모습대로 솔직하게 응답해주세요. 자신이 원하는 이사적인 모습을 선택하기 보다는 평소 자신의 모습대로 솔직하게 응답해주셔야 보다 정확한 결과를 확인할 수 있습니다.<br>
+        <br>
+        ​가능한 모든 문항을 빠트리지 않고 검사를 완료해야 보다 정확한 결과를 확인하실 수 있습니다.</div>
+      <div class="next">
+        <button type="button" id=btn class="btn-next btn btn-outline-success" onclick="forward();" >다음으로</button>
+      </div>
+    </article>
+    <article class="survey">
+      <div class="surv-list">
+        <form name="frm" >
+          <div class="name">
+            <div class="surv-name">이름 : </div>
+            <input type="text" name="이름" placeholder="이름을 입력해주세요" class="text" id="input_text" required="required" aria-required="true">
+          </div>
+          <div class="age">
+            <div class="surv-name"> 나이 : </div>
+            <div class="surv">
+              <label class="label">
+                <input type="radio" name="age" value="25-29">
+                25-29 </label>
+              <label class="label">
+                <input type="radio" name="age" value="30-34">
+                30-34 </label>
+              <label class="label">
+                <input type="radio" name="age" value="35-39">
+                35-39 </label>
+              <label class="label">
+                <input type="radio" name="age" value="40-44">
+                40-44 </label>
+              <label class="label">
+                <input type="radio" name="age" value="45-49">
+                45-49 </label>
+              <label class="label">
+                <input type="radio" name="age" value="50-">
+                50대 이상 </label>
+            </div>
+          </div>
+          <div class="job">
+            <div class="surv-name">직업 :</div>
+            <input type="text" name="직업" placeholder="직업을 입력해주세요" class="text" id="input_job">
+          </div>
+          <div class="job_site">
+            <div class="surv-name">직위 :</div>
+            <input type="text" name="직위" placeholder="직위을 입력해주세요" class="text" id="input_job_site">
+          </div>
+          <div class="job_satis">
+            <div class="surv-name1">직업만족도 :</div>
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+              <label class="btn btn-secondary active">
+                <input type="radio" name="options" id="option1" class="satis-high" value="상" checked>
+                상 </label>
+              <label class="btn btn-secondary">
+                <input type="radio" name="options" class="satis-soso" id="option2" value="중">
+                중 </label>
+              <label class="btn btn-secondary">
+                <input type="radio" name="options" class="satis-low" id="option3" value="하">
+                하 </label>
+            </div>
+          </div>
+			<div class="last-edu">
+				<div class="surv-name1">최종학력 :</div>
+				<div class="surv">
+              <label class="label">
+                <input type="radio" name="최종학력" value="고졸">
+                고등학교 졸업 </label>
+              <label class="label">
+                <input type="radio" name="최종학력" value="대졸">
+                대학교 졸업 </label>
+              <label class="label">
+                <input type="radio" name="최종학력" value="대학원졸">
+                대학원 졸업 </label>
+              <label class="label">
+                <input type="radio" name="최종학력" value="기타">
+                기타 </label>
+            </div>
+			</div>
+          <div class="area">
+            <div class="surv-name">지역 :</div>
+            <select name="sido1" id="sido1" class="select-area" required="required" aria-required="true">
+            </select>
+            <select name="gugun1" id="gugun1" class="select-area" required="required" aria-required="true">
+            </select>
+          </div>
+          <div class="child">
+            <div class="surv-name">자녀 :</div>
+			  <div class="cnt_last">
+			  <div class="cnt0">
+			  <div class="child-status" id="child-status">
+			   <div class="btn-group btn-group-toggle" data-toggle="buttons">
+              <label class="btn btn-secondary active">
+                <input type="radio" name="child-gen0"  class="satis-high child-gen1" value="남" checked>
+                남 </label>
+              <label class="btn btn-secondary">
+                <input type="radio" name="child-gen0" class="satis-soso child-gen2"  value="여">
+                여 </label>
+            </div>
+			  <input type="text" name="자녀나이" placeholder="자녀나이 입력" class="text1 input_childage0 childage_se" >
+				  </div>
+				  </div>
+				  
+				  <div class="cnt1"></div>
+				   <div class="cnt2"></div>
+				   <div class="cnt3"></div>
+				   <div class="cnt4"></div>
+				   
+				  
+				  </div>
+			   <button type="button" id="plus" class="plus" onClick="plus0();" >+</button>
+          </div>
+			 <div class="why-test">
+            <div class="surv-name">검사동기 : </div>
+				 <textarea name="이름" placeholder="검사동기를 입력해주세요" class="why" id="input_why"></textarea>
+          </div>
+          <div class="next">
+            <button type="submit" id=btn class="btn-next btn btn-outline-success" onclick="first();" >시작하기</button>
+          </div>
+        </form>
+      </div>
+    </article>
+    <article class="second">
+      <div class="question">
+        <div class="box-size">
+          <div class="question-box">
+            <p id="question-content" class="question-content">질문1</p>
+          </div>
+          <input id="type" type="hidden" value="BM">
+          <div class="option">
+            <div id="one" class="option1">
+              <button type="button" class="button1"></button>
+            </div>
+            <div class="option2">
+              <button id="two" type="button" class="button2"></button>
+            </div>
+            <div class="option3">
+              <button id="three" type="button" class="button3"></button>
+            </div>
+            <div class="option4">
+              <button id="four" type="button" class="button4"></button>
+            </div>
+            <div class="option5">
+              <button id="five" type="button" class="button5"></button>
+            </div>
+          </div>
+          <div class="option">
+            <p class="ans"> 전혀 아니다</p>
+            <p class="ans"> 아니다</p>
+            <p class="ans"> 잘 모르겠다</p>
+            <p class="ans"> 그렇다</p>
+            <p class="ans"> 매우 그렇다</p>
+          </div>
+        </div>
+      </div>
+    </article>  
+  </main>
+</div>
+<article class="result">
+  <div class="grp-total">
+    <div class="total">
+      <p class="nn">당신의 라이프 유형은...</p>
+    </div>
+    <div class="typebytype1"> <img src="./img/A.png" class="img">
+      <p class="nn nn1">OOO</p>
+      <div class="shortex">간단한 설명이 들어갈 거에요. 몇줄정도 들어갈까요? 세줄? 네줄? 대충 세줄 정도 들어가겠죠..?</div>
+    </div>
+    <div class="graph">
+      <p class="graph_name">일</p>
+      <div class="graph_sub">
+        <p class="sub" style="color:black;">보스형</p>
+        <div class="worker">
+			<div class="center"></div>
+			<div class="left-bar">
+          <div class="worker_bar" style="width: 40%;background-color:blueviolet;">10%</div>
+				</div>
+        </div>
+        <p class="sub2" style="color:black;">멤버형</p>
+      </div>
+    </div>
+    <div class="graph">
+      <p class="graph_name">육아</p>
+      <div class="graph_sub">
+        <p class="sub_1" style="color:black;">자녀 우선형</p>
+        <div class="worker">
+			<div class="center"></div>
+			<div class="left-bar1">
+          <div class="baby_bar" style="width: 40%;background-color:blueviolet;">10%</div>
+			</div>
+        </div>
+        <p class="sub2_1" style="color:black;">자기 우선형</p>
+      </div>
+    </div>
+    <div class="graph">
+      <p class="graph_name">자아</p>
+      <div class="graph_sub">
+        <p class="sub_2" style="color:black;">외향형</p>
+        <div class="worker">
+			<div class="center"></div>
+			<div class="right-bar2">
+          <div class="ego_bar" style="width: 40%;background-color:blueviolet;">10%</div>
+			</div>
+        </div>
+        <p class="sub2_2" style="color:black;">내향형</p>
+      </div>
+    </div>
+    <div class="graph">
+      <p class="graph_name">관계</p>
+      <div class="graph_sub">
+        <p class="sub_3" style="color:black;">개인형</p>
+        <div class="worker">
+			<div class="center"></div>
+			<div class="right-bar3">
+          <div class="relation_bar" style="width: 40%;background-color:blueviolet;">10%</div>
+			</div>
+        </div>
+        <p class="sub2_3" style="color:black;">집단형</p>
+      </div>
+    </div>
+  </div>
+  <button type="button" class="btn-next btn btn-outline-success more" onClick="Last();"> 더 자세한 설명 보기 </button>
+  <div class="share addthis_inline_share_toolbox"></div>
+</article>
+<article class="result1 last">
+  <div class="tbt-total">
+    <div class="typebytype">
+      <div class="yap1">일 잘하는 보스형인 당신은..</div>
+      <div class="explain">설명이 들어갑니다. 이런 사람입니다. 이런 사람이에요. 이러이러한 사람입니다. 설명이 들어갑니다. 이런 사람입니다. 이런 사람이에요. 이러이러한 사람입니다. </div>
+      <div class="explain1">설명이 들어갑니다. 이런 사람입니다. 이런 사람이에요. 이러이러한 사람입니다. 설명이 들어갑니다. 이런 사람입니다. 이런 사람이에요. 이러이러한 사람입니다. </div>
+      <div class="explain2">설명이 들어갑니다. 이런 사람입니다. 이런 사람이에요. 이러이러한 사람입니다. 설명이 들어갑니다. 이런 사람입니다. 이런 사람이에요. 이러이러한 사람입니다. </div>
+    </div>
+    <div class="typebytype">
+      <div class="yap2">일 잘하는 보스형인 당신은..</div>
+      <div class="explain3">설명이 들어갑니다. 이런 사람입니다. 이런 사람이에요. 이러이러한 사람입니다. 설명이 들어갑니다. 이런 사람입니다. 이런 사람이에요. 이러이러한 사람입니다. </div>
+      <div class="explain4">설명이 들어갑니다. 이런 사람입니다. 이런 사람이에요. 이러이러한 사람입니다. 설명이 들어갑니다. 이런 사람입니다. 이런 사람이에요. 이러이러한 사람입니다. </div>
+      <div class="explain5">설명이 들어갑니다. 이런 사람입니다. 이런 사람이에요. 이러이러한 사람입니다. 설명이 들어갑니다. 이런 사람입니다. 이런 사람이에요. 이러이러한 사람입니다. </div>
+      <div class="explain6">설명이 들어갑니다. 이런 사람입니다. 이런 사람이에요. 이러이러한 사람입니다. 설명이 들어갑니다. 이런 사람입니다. 이런 사람이에요. 이러이러한 사람입니다. </div>
+    </div>
+    <div class="typebytype">
+      <div class="yapplus">
+        <div class="yap3">일 잘하는 보스형인 당신은..</div>
+        <div class="yap4">일 잘하는 보스형인 당신은..</div>
+      </div>
+      <div class="explain7">설명이 들어갑니다. 이런 사람입니다. 이런 사람이에요. 이러이러한 사람입니다. 설명이 들어갑니다. 이런 사람입니다. 이런 사람이에요. 이러이러한 사람입니다. </div>
+      <div class="explain8">설명이 들어갑니다. 이런 사람입니다. 이런 사람이에요. 이러이러한 사람입니다. 설명이 들어갑니다. 이런 사람입니다. 이런 사람이에요. 이러이러한 사람입니다. </div>
+      <div class="explain9">설명이 들어갑니다. 이런 사람입니다. 이런 사람이에요. 이러이러한 사람입니다. 설명이 들어갑니다. 이런 사람입니다. 이런 사람이에요. 이러이러한 사람입니다. </div>
+      <div class="explain10">설명이 들어갑니다. 이런 사람입니다. 이런 사람이에요. 이러이러한 사람입니다. 설명이 들어갑니다. 이런 사람입니다. 이런 사람이에요. 이러이러한 사람입니다. </div>
+      <div class="explain11">설명이 들어갑니다. 이런 사람입니다. 이런 사람이에요. 이러이러한 사람입니다. 설명이 들어갑니다. 이런 사람입니다. 이런 사람이에요. 이러이러한 사람입니다. </div>
+      <div class="explain12">설명이 들어갑니다. 이런 사람입니다. 이런 사람이에요. 이러이러한 사람입니다. 설명이 들어갑니다. 이런 사람입니다. 이런 사람이에요. 이러이러한 사람입니다. </div>
+      <div class="explain13">설명이 들어갑니다. 이런 사람입니다. 이런 사람이에요. 이러이러한 사람입니다. 설명이 들어갑니다. 이런 사람입니다. 이런 사람이에요. 이러이러한 사람입니다. </div>
+    </div>
+  </div>
+  <button type="button" class="btn-next btn btn-outline-success more" onClick="Back();"> 이전으로</button>
+  <div class="share addthis_inline_share_toolbox"></div>
+</article>
+<input type="hidden" id="BM" value="0">
+<input type="hidden" id="SA" value="0">
+<input type="hidden" id="AN" value="0">
+<input type="hidden" id="CM" value="0">
+<input type="hidden" id="EE" value="0">
+<input type="hidden" id="SI" value="0">
+<input type="hidden" id="IN" value="0">
+<input type="hidden" id="EI" value="0">
+<input type="hidden" id="SS" value="0">
+<input type="hidden" id="RR" value="0">
+<input type="hidden" id="RI" value="0">
+<input type="hidden" id="SG" value="0">
+<input type="hidden" id="CA" value="0">
+<input type="hidden" id="SL" value="0">
+<input type="hidden" id="name" value="">
+<input type="hidden" id="job" value="">
+<input type="hidden" id="age" value="">
+<input type="hidden" id="job-site" value="">
+<input type="hidden" id="job-satisfied" value="">
+<input type="hidden" id="last-education" value="">
+<input type="hidden" id="why-test" value="">
+<input type="hidden" id="child-gender" value="">
+<input type="hidden" id="child-number" value="">
+<input type="hidden" id="child-age" value="">
+<input type="hidden" id="address-Do" value="">
+<input type="hidden" id="address-Gu" value="">
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-6135a96476c8c9c9"></script>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+<script type="text/javascript" src="nogada.js"></script>
+</html>
