@@ -37,7 +37,7 @@ class M4BT {
 	}
 }
 
-var cntt=0; 
+var cntt=0;
 
 /* document.getElementById("plus").addEventListener("click", function(e){
       var target = document.querySelector(".cnt"+cntt).cloneNode(true);
@@ -55,18 +55,18 @@ var child_age ;
 
 
 function plus0(){
-	
+
 	var target = document.querySelector(".cnt"+cntt).cloneNode(true);
 	cntt++;
-	
+
 	 document.querySelector(".cnt"+cntt).innerHTML += target.innerHTML;
-	
+
 	$(".cnt"+cntt).find('input.child-gen1').attr('name','child-gen'+cntt);
 	$(".cnt"+cntt).find('input.child-gen2').attr('name','child-gen'+cntt);
-	
+
 	$(".cnt"+cntt).find('input.childage_se').attr('class','text1 childage_se input_childage'+cntt);
-	
- 
+
+
 }
 
 
@@ -76,14 +76,14 @@ function first() {
 	for(cntt=0; cntt<5; cntt++){
 	child_gen = $('input[name="child-gen'+cntt+'"]:radio:checked').val();
 	child_age = $('.input_childage'+cntt).val();
-	
+
 	div = new Child_stat(child_gen, child_age);
 	Child_data[cntt] = div;
-		
+
 	}
-	
+
 	console.log(Child_data);
-	
+
   var name = document.getElementById('input_text').value;
   $("#name").val(name);
   console.log(name);
@@ -99,7 +99,7 @@ function first() {
   var job_site = document.getElementById('input_job_site').value;
   $("#job-site").val(job_site);
   console.log(job_site);
-	
+
 var last_edu = $('input[name="최종학력"]:checked').val();
   $("#last-education").val(last_edu);
   console.log(last_edu);
@@ -129,7 +129,7 @@ var last_edu = $('input[name="최종학력"]:checked').val();
   console.log(why_test);
 
   Person_data = new Person(name, age, job, job_site, job_satis, address_Do, address_Gu, why_test);
-	
+
   $(".survey").hide();
   $(".pgs-s").show();
   $(".second").show();
@@ -1368,7 +1368,7 @@ function next() {
 		$(".nn").html(n_list["n1"]["name"]);
 		m4= new M4BT(n_list["n1"]["name"]);
 
-	}  
+	}
 	  else if(res=="BM_B" && res3=="CM_C" && res7=="EI_E" && res11=="SG_G"){
 		$(".nn1").html(n_list["n2"]["name"]);
 		  m4= new M4BT(n_list["n2"]["name"]);
@@ -1428,9 +1428,9 @@ function next() {
 		$(".nn1").html(n_list["n16"]["name"]);
 		   m4= new M4BT(n_list["n16"]["name"]);
 	}
-	 
+
 	  console.log(Last_data);
-	  
+
   } else {
 
 
