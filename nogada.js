@@ -1328,7 +1328,8 @@ function next() {
     Fix3 = 100 - (100 / 65 * C);
     if (res7 == "EI_I") {
       $(".sub2_2").attr('style', 'color:mediumslateblue;');
-      $(".right-bar1").attr('class', 'right-bar');
+      $(".right-bar2").attr('class', 'right-bar');
+      $(".ego_bar").attr('class', 'ego_bar_right');
       $(".ego_bar_right").attr('style', 'width: ' + Fix3.toFixed(0) + '%;background-color:mediumslateblue;');
       $(".ego_bar_right").html(Fix3.toFixed(0) / 2 + '%');
     }
