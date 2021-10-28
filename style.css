@@ -311,6 +311,7 @@ input[type="radio"][name="child-gen6"], input[type="radio"][name="options"]{
 }
 .question {
   padding: 1rem 0rem;
+  border-bottom: none;
   opacity: 1;
 }
 .question-box {
