@@ -85,7 +85,7 @@ header {
   display: flex;
   justify-content: flex-start;
   padding: 0.5rem;
-	
+
   }
 
 .why{
@@ -110,14 +110,14 @@ header {
   width: 80px;
   font-size: 1rem;
   flex-shrink: 1.5;
-  
+
 }
 
 .surv-name1 {
   width: 85px;
   font-size: 1rem;
   flex-shrink: 1.5;
-  
+
 }
 
 .label {
@@ -133,7 +133,7 @@ input {
 
 .btn-group{
 	height: 25px;
-	
+
 }
 
 .grp-satis{
@@ -142,7 +142,7 @@ input {
 }
 
 .options{
-	
+
 	display: contents;
 	flex-direction: row;
 	margin: 0;
@@ -261,7 +261,7 @@ input[type="radio"][name="child-gen6"], input[type="radio"][name="options"]{
 	align-items: center;
 	align-self: center;
 	align-content: center;
-	
+
 }
 
 .plus:active{
@@ -311,7 +311,6 @@ input[type="radio"][name="child-gen6"], input[type="radio"][name="options"]{
 }
 .question {
   padding: 1rem 0rem;
-  border-bottom: 1px solid #02672C;
   opacity: 1;
 }
 .question-box {
@@ -638,7 +637,7 @@ input[type="radio"][name="child-gen6"], input[type="radio"][name="options"]{
 
 .survey, .pgs-s, .result {
   display: none;
-} 
+}
 
 @media (hover: hover) {
   .button2:hover, .button1:hover {
