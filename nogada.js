@@ -256,19 +256,19 @@ var n_list = {
     "img" : "ISDR"
   },
   n13: {
-    "name": "블루바이올렛(EOBR)"
+    "name": "블루바이올렛(EOBR)",
     "img" : "EOBR"
   },
   n14: {
-    "name": "파우더더쿠아즈(ESBR)"
+    "name": "파우더더쿠아즈(ESBR)",
     "img" : "ESBR"
   },
   n15: {
-    "name": "콘플라워블루(IOBR)"
+    "name": "콘플라워블루(IOBR)",
     "img" : "IOBR"
   },
   n16: {
-    "name": "윗베이직(ISBR)"
+    "name": "윗베이직(ISBR)",
     "img" : "ISBR"
   },
 }
