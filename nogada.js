@@ -65,8 +65,6 @@ function plus0(){
 	$(".cnt"+cntt).find('input.child-gen2').attr('name','child-gen'+cntt);
 
 	$(".cnt"+cntt).find('input.childage_se').attr('class','text1 childage_se input_childage'+cntt);
-
-
 }
 
 
@@ -210,52 +208,68 @@ function btn_on() {
 
 var n_list = {
   n1: {
-    "name": "골든옐로우(EODP)"
+    "name": "골든옐로우(EODP)",
+    "img" : "EODP"
   },
   n2: {
-    "name": "인디언레드(ESDP)"
+    "name": "인디언레드(ESDP)",
+    "img" : "ESDP"
   },
   n3: {
-    "name": "미스티로즈(IODP)"
+    "name": "미스티로즈(IODP)",
+    "img" : "IODP"
   },
   n4: {
-    "name": "로지브라운(ISDP)"
+    "name": "로지브라운(ISDP)",
+    "img" : "ISDP"
   },
   n5: {
-    "name": "앤티크화이트(EOBP)"
+    "name": "앤티크화이트(EOBP)",
+    "img" : "EOBP"
   },
   n6: {
-    "name": "포레스트그린(ESBP)"
+    "name": "포레스트그린(ESBP)",
+    "img" : "ESBP"
   },
   n7: {
-    "name": "민트크림(IOBP)"
+    "name": "민트크림(IOBP)",
+    "img" : "IOBP"
   },
   n8: {
-    "name": "라벤다브러쉬(ISBP)"
+    "name": "라벤다브러쉬(ISBP)",
+    "img" : "ISBP"
   },
   n9: {
     "name": "오렌지레드(EODR)"
+    "img" : "EODR"
   },
   n10: {
-    "name": "피치퍼프(ESDR)"
-  },
+    "name": "피치퍼프(ESDR)",
+    "img" : "ESDR"
+    },
   n11: {
-    "name": "앨리스실버(IODR)"
+    "name": "앨리스실버(IODR)",
+    "img" : "IODR"
   },
   n12: {
-    "name": "슬레이트그레이(ISDR)"
+    "name": "슬레이트그레이(ISDR)",
+    "img" : "ISDR"
   },
   n13: {
     "name": "블루바이올렛(EOBR)"
+    "img" : "EOBR"
   },
   n14: {
     "name": "파우더더쿠아즈(ESBR)"
+    "img" : "ESBR"
   },
   n15: {
     "name": "콘플라워블루(IOBR)"
+    "img" : "IOBR"
   },
   n16: {
     "name": "윗베이직(ISBR)"
+    "img" : "ISBR"
   },
 }
 
@@ -1374,66 +1388,115 @@ function next() {
 
 	if(res=="BM_B" && res3=="CM_C" && res7=="EI_E" && res11=="SG_S"){
 		$(".nn").html(n_list["n1"]["name"]);
+    $(".img").attr('src', './img/EODP.png";');
+    $(".result").attr('style', 'color:#ffde60;');
+    $(".result1").attr('style', 'color:#ffde60;');
 		m4= new M4BT(n_list["n1"]["name"]);
 
 	}
 	  else if(res=="BM_B" && res3=="CM_C" && res7=="EI_E" && res11=="SG_G"){
 		$(".nn1").html(n_list["n2"]["name"]);
+    $(".img").attr('src', './img/ESDP.png";');
+    $(".result").attr('style', 'color:#d25656;');
+    $(".result1").attr('style', 'color:#d25656;');
 		  m4= new M4BT(n_list["n2"]["name"]);
 	}
 	   else if(res=="BM_B" && res3=="CM_C" && res7=="EI_I" && res11=="SG_S"){
 		$(".nn1").html(n_list["n3"]["name"]);
+    $(".img").attr('src', './img/IODP.png";');
+    $(".result").attr('style', 'color:#f6aca3;');
+    $(".result1").attr('style', 'color:#f6aca3;');
 		   m4= new M4BT(n_list["n3"]["name"]);
 	}
 	   else if(res=="BM_B" && res3=="CM_C" && res7=="EI_I" && res11=="SG_G"){
 		$(".nn1").html(n_list["n4"]["name"]);
+    $(".img").attr('src', './img/ISDP.png";');
+    $(".result").attr('style', 'color:#bc8f8f;');
+    $(".result1").attr('style', 'color:#bc8f8f;');
 		   m4= new M4BT(n_list["n4"]["name"]);
 	}
 	   else if(res=="BM_B" && res3=="CM_M" && res7=="EI_E" && res11=="SG_S"){
 		$(".nn1").html(n_list["n5"]["name"]);
+    $(".img").attr('src', './img/EOBP.png";');
+    $(".result").attr('style', 'color:#faf3ea;');
+    $(".result1").attr('style', 'color:#faf3ea;');
 		   m4= new M4BT(n_list["n5"]["name"]);
 	}
 	   else if(res=="BM_B" && res3=="CM_M" && res7=="EI_E" && res11=="SG_G"){
 		$(".nn1").html(n_list["n6"]["name"]);
+    $(".img").attr('src', './img/ESBP.png";');
+    $(".result").attr('style', 'color:#519951;');
+    $(".result1").attr('style', 'color:#519951;');
 		   m4= new M4BT(n_list["n6"]["name"]);
 	}
 	   else if(res=="BM_B" && res3=="CM_M" && res7=="EI_I" && res11=="SG_S"){
 		$(".nn1").html(n_list["n7"]["name"]);
+    $(".img").attr('src', './img/IOBP.png";');
+    $(".result").attr('style', 'color:#b6e1d1;');
+    $(".result1").attr('style', 'color:#b6e1d1;');
 		   m4= new M4BT(n_list["n7"]["name"]);
 	}
 	   else if(res=="BM_B" && res3=="CM_M" && res7=="EI_I" && res11=="SG_G"){
 		$(".nn1").html(n_list["n8"]["name"]);
+    $(".img").attr('src', './img/ISBP.png";');
+    $(".result").attr('style', 'color:#f6e6ff;');
+    $(".result1").attr('style', 'color:#f6e6ff;');
 		   m4= new M4BT(n_list["n8"]["name"]);
 	}
 	   else if(res=="BM_M" && res3=="CM_C" && res7=="EI_E" && res11=="SG_S"){
 		$(".nn1").html(n_list["n9"]["name"]);
+    $(".img").attr('src', './img/EODR.png";');
+    $(".result").attr('style', 'color:#ff723e;');
+    $(".result1").attr('style', 'color:#ff723e;');
 		   m4= new M4BT(n_list["n9"]["name"]);
 	}
 	   else if(res=="BM_M" && res3=="CM_C" && res7=="EI_E" && res11=="SG_G"){
 		$(".nn1").html(n_list["n10"]["name"]);
+      $(".img").attr('src', './img/ESDR.png";');
+    $(".result").attr('style', 'color:#e78dbc;');
+    $(".result1").attr('style', 'color:#e78dbc;');
 		   m4= new M4BT(n_list["n10"]["name"]);
 	}
 	   else if(res=="BM_M" && res3=="CM_C" && res7=="EI_I" && res11=="SG_S"){
 		$(".nn1").html(n_list["n11"]["name"]);
+      $(".img").attr('src', './img/IODR.png";');
+    $(".result").attr('style', 'color:#c0c0c0;');
+    $(".result1").attr('style', 'color:#c0c0c0;');
 		   m4= new M4BT(n_list["n11"]["name"]);
 	}
 	   else if(res=="BM_M" && res3=="CM_C" && res7=="EI_I" && res11=="SG_G"){
 		$(".nn1").html(n_list["n12"]["name"]);
+      $(".img").attr('src', './img/ISDR.png";');
+    $(".result").attr('style', 'color:#708090;');
+    $(".result1").attr('style', 'color:#708090;');
 		   m4= new M4BT(n_list["n12"]["name"]);
 	}
 	   else if(res=="BM_M" && res3=="CM_M" && res7=="EI_E" && res11=="SG_S"){
 		$(".nn1").html(n_list["n13"]["name"]);
+      $(".img").attr('src', './img/EOBR.png";');
+    $(".result").attr('style', 'color:#9F58e1;');
+    $(".result1").attr('style', 'color:#9f58e1;');
 		   m4= new M4BT(n_list["n13"]["name"]);
-	} else if(res=="BM_M" && res3=="CM_M" && res7=="EI_E" && res11=="SG_G"){
+	}
+      else if(res=="BM_M" && res3=="CM_M" && res7=="EI_E" && res11=="SG_G"){
 		$(".nn1").html(n_list["n14"]["name"]);
+      $(".img").attr('src', './img/ESBR.png";');
+    $(".result").attr('style', 'color:#40e0d0');
+    $(".result1").attr('style', 'color:#40e0d0;');
 		m4= new M4BT(n_list["n14"]["name"]);
 	}
-	   else if(res=="BM_M" && res3=="CM_M" && res7=="EI_I" && res11=="SG_S"){
+     else if(res=="BM_M" && res3=="CM_M" && res7=="EI_I" && res11=="SG_S"){
 		$(".nn1").html(n_list["n15"]["name"]);
+      $(".img").attr('src', './img/IOBR.png";');
+    $(".result").attr('style', 'color:#6495ed;');
+    $(".result1").attr('style', 'color:#6496ed;');
 		   m4= new M4BT(n_list["n15"]["name"]);
 	}
 	   else if(res=="BM_M" && res3=="CM_M" && res7=="EI_I" && res11=="SG_G"){
 		$(".nn1").html(n_list["n16"]["name"]);
+      $(".img").attr('src', './img/ISBR.png";');
+    $(".result").attr('style', 'color:#f5deb3;');
+    $(".result1").attr('style', 'color:#f5deb3;');
 		   m4= new M4BT(n_list["n16"]["name"]);
 	}
 
