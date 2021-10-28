@@ -240,7 +240,7 @@ var n_list = {
     "img" : "ISBP"
   },
   n9: {
-    "name": "오렌지레드(EODR)"
+    "name": "오렌지레드(EODR)",
     "img" : "EODR"
   },
   n10: {
