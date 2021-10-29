@@ -1488,7 +1488,7 @@ function next() {
 	   else if(res=="BM_M" && res3=="CM_M" && res7=="EI_I" && res11=="SG_G"){
 		$(".nn1").html(n_list["n16"]["name"]);
     //  $(".img").attr('src', './img/ISBR.png;');
-  //  $(".result").attr('style', 'background-color:#f5deb3;');
+    $(".result").attr('style', 'background-color:#f5deb3;');
   //  $(".result1").attr('style', 'background-color:#f5deb3;');
 		   m4= new M4BT(n_list["n16"]["name"]);
 	}
