@@ -8,7 +8,7 @@ function forward() {
 
 var Person_data = new Array();
 var Child_data = new Array();
-var Last_data= new Array();
+var Last_data = new Array();
 
 class Person {
   constructor(name, age, job, job_site, job_satis, last_edu, address_Do, address_Gu, why_test) {
@@ -17,7 +17,7 @@ class Person {
     this.job = job;
     this.job_site = job_site;
     this.job_satis = job_satis;
-	  this.last_edu = last_edu;
+    this.last_edu = last_edu;
     this.address_Do = address_Do;
     this.address_Gu = address_Gu;
     this.why_test = why_test;
@@ -25,19 +25,19 @@ class Person {
 }
 
 class Child_stat {
-	constructor(child_gen, child_age){
-		this.child_gen=child_gen;
-		this. child_age = child_age;
-	}
+  constructor(child_gen, child_age) {
+    this.child_gen = child_gen;
+    this.child_age = child_age;
+  }
 }
 
 class M4BT {
-	constructor(m4bt){
-		this.m4bt=m4bt;
-	}
+  constructor(m4bt) {
+    this.m4bt = m4bt;
+  }
 }
 
-var cntt=0;
+var cntt = 0;
 
 /* document.getElementById("plus").addEventListener("click", function(e){
       var target = document.querySelector(".cnt"+cntt).cloneNode(true);
@@ -50,37 +50,37 @@ var cntt=0;
 });*/
 
 var div;
-var child_gen ;
-var child_age ;
+var child_gen;
+var child_age;
 
 
-function plus0(){
+function plus0() {
 
-	var target = document.querySelector(".cnt"+cntt).cloneNode(true);
-	cntt++;
+  var target = document.querySelector(".cnt" + cntt).cloneNode(true);
+  cntt++;
 
-	 document.querySelector(".cnt"+cntt).innerHTML += target.innerHTML;
+  document.querySelector(".cnt" + cntt).innerHTML += target.innerHTML;
 
-	$(".cnt"+cntt).find('input.child-gen1').attr('name','child-gen'+cntt);
-	$(".cnt"+cntt).find('input.child-gen2').attr('name','child-gen'+cntt);
+  $(".cnt" + cntt).find('input.child-gen1').attr('name', 'child-gen' + cntt);
+  $(".cnt" + cntt).find('input.child-gen2').attr('name', 'child-gen' + cntt);
 
-	$(".cnt"+cntt).find('input.childage_se').attr('class','text1 childage_se input_childage'+cntt);
+  $(".cnt" + cntt).find('input.childage_se').attr('class', 'text1 childage_se input_childage' + cntt);
 }
 
 
 
 
 function first() {
-	for(cntt=0; cntt<5; cntt++){
-	child_gen = $('input[name="child-gen'+cntt+'"]:radio:checked').val();
-	child_age = $('.input_childage'+cntt).val();
+  for (cntt = 0; cntt < 5; cntt++) {
+    child_gen = $('input[name="child-gen' + cntt + '"]:radio:checked').val();
+    child_age = $('.input_childage' + cntt).val();
 
-	div = new Child_stat(child_gen, child_age);
-	Child_data[cntt] = div;
+    div = new Child_stat(child_gen, child_age);
+    Child_data[cntt] = div;
 
-	}
+  }
 
-	console.log(Child_data);
+  console.log(Child_data);
 
   var name = document.getElementById('input_text').value;
   $("#name").val(name);
@@ -98,7 +98,7 @@ function first() {
   $("#job-site").val(job_site);
   console.log(job_site);
 
-var last_edu = $('input[name="최종학력"]:checked').val();
+  var last_edu = $('input[name="최종학력"]:checked').val();
   $("#last-education").val(last_edu);
   console.log(last_edu);
 
@@ -150,7 +150,7 @@ var num = 1,
   pgs = 0;
 
 
-$('document').ready(function () {
+$('document').ready(function() {
   var area0 = ["시/도 선택", "서울특별시", "인천광역시", "대전광역시", "광주광역시", "대구광역시", "울산광역시", "부산광역시", "경기도", "강원도", "충청북도", "충청남도", "전라북도", "전라남도", "경상북도", "경상남도", "제주도"];
   var area1 = ["강남구", "강동구", "강북구", "강서구", "관악구", "광진구", "구로구", "금천구", "노원구", "도봉구", "동대문구", "동작구", "마포구", "서대문구", "서초구", "성동구", "성북구", "송파구", "양천구", "영등포구", "용산구", "은평구", "종로구", "중구", "중랑구"];
   var area2 = ["계양구", "남구", "남동구", "동구", "부평구", "서구", "연수구", "중구", "강화군", "옹진군"];
@@ -172,9 +172,9 @@ $('document').ready(function () {
 
   // 시/도 선택 박스 초기화
 
-  $("select[name^=sido]").each(function () {
+  $("select[name^=sido]").each(function() {
     $selsido = $(this);
-    $.each(eval(area0), function () {
+    $.each(eval(area0), function() {
       $selsido.append("<option value='" + this + "'>" + this + "</option>");
     });
     $selsido.next().append("<option value=''>구/군 선택</option>");
@@ -183,7 +183,7 @@ $('document').ready(function () {
 
   // 시/도 선택시 구/군 설정
 
-  $("select[name^=sido]").change(function () {
+  $("select[name^=sido]").change(function() {
     var area = "area" + $("option", $(this)).index($("option:selected", $(this))); // 선택지역의 구군 Array
     var $gugun = $(this).next(); // 선택영역 군구 객체
     $("option", $gugun).remove(); // 구군 초기화
@@ -191,7 +191,7 @@ $('document').ready(function () {
     if (area == "area0")
       $gugun.append("<option value=''>구/군 선택</option>");
     else {
-      $.each(eval(area), function () {
+      $.each(eval(area), function() {
         $gugun.append("<option value='" + this + "'>" + this + "</option>");
       });
     }
@@ -209,67 +209,67 @@ function btn_on() {
 var n_list = {
   n1: {
     "name": "골든옐로우(EODP)",
-    "img" : "EODP"
+    "img": "EODP"
   },
   n2: {
     "name": "인디언레드(ESDP)",
-    "img" : "ESDP"
+    "img": "ESDP"
   },
   n3: {
     "name": "미스티로즈(IODP)",
-    "img" : "IODP"
+    "img": "IODP"
   },
   n4: {
     "name": "로지브라운(ISDP)",
-    "img" : "ISDP"
+    "img": "ISDP"
   },
   n5: {
     "name": "앤티크화이트(EOBP)",
-    "img" : "EOBP"
+    "img": "EOBP"
   },
   n6: {
     "name": "포레스트그린(ESBP)",
-    "img" : "ESBP"
+    "img": "ESBP"
   },
   n7: {
     "name": "민트크림(IOBP)",
-    "img" : "IOBP"
+    "img": "IOBP"
   },
   n8: {
     "name": "라벤다브러쉬(ISBP)",
-    "img" : "ISBP"
+    "img": "ISBP"
   },
   n9: {
     "name": "오렌지레드(EODR)",
-    "img" : "EODR"
+    "img": "EODR"
   },
   n10: {
     "name": "피치퍼프(ESDR)",
-    "img" : "ESDR"
-    },
+    "img": "ESDR"
+  },
   n11: {
     "name": "앨리스실버(IODR)",
-    "img" : "IODR"
+    "img": "IODR"
   },
   n12: {
     "name": "슬레이트그레이(ISDR)",
-    "img" : "ISDR"
+    "img": "ISDR"
   },
   n13: {
     "name": "블루바이올렛(EOBR)",
-    "img" : "EOBR"
+    "img": "EOBR"
   },
   n14: {
     "name": "파우더더쿠아즈(ESBR)",
-    "img" : "ESBR"
+    "img": "ESBR"
   },
   n15: {
     "name": "콘플라워블루(IOBR)",
-    "img" : "IOBR"
+    "img": "IOBR"
   },
   n16: {
     "name": "윗베이직(ISBR)",
-    "img" : "ISBR"
+    "img": "ISBR"
   },
 }
 
@@ -1166,7 +1166,7 @@ for (r = 0; r < 108; r++) {
 }
 
 
-$("#one").click(function () {
+$("#one").click(function() {
   var type = $("#type").val();
   var preValue = $("#" + type).val();
   if (q_list[q_list_ran[num]]["rev"] == 0) {
@@ -1175,13 +1175,13 @@ $("#one").click(function () {
   }
   if (q_list[q_list_ran[num]]["rev"] == 1) {
     $("#" + type).val(parseInt(preValue) - 2);
-    console.log(parseInt(preValue) + - 2);
+    console.log(parseInt(preValue) + -2);
   }
   num++;
   next();
 })
 
-$("#two").click(function () {
+$("#two").click(function() {
   var type = $("#type").val();
   var preValue = $("#" + type).val();
   if (q_list[q_list_ran[num]]["rev"] == 0) {
@@ -1189,13 +1189,13 @@ $("#two").click(function () {
     console.log(parseInt(preValue) + 1);
   }
   if (q_list[q_list_ran[num]]["rev"] == 1) {
-    $("#" + type).val(parseInt(preValue) - 1 );
+    $("#" + type).val(parseInt(preValue) - 1);
   }
   num++;
   next();
 })
 
-$("#three").click(function () {
+$("#three").click(function() {
   var type = $("#type").val();
   var preValue = $("#" + type).val();
   if (q_list[q_list_ran[num]]["rev"] == 0) {
@@ -1210,7 +1210,7 @@ $("#three").click(function () {
   next();
 })
 
-$("#four").click(function () {
+$("#four").click(function() {
   var type = $("#type").val();
   var preValue = $("#" + type).val();
   if (q_list[q_list_ran[num]]["rev"] == 0) {
@@ -1224,11 +1224,11 @@ $("#four").click(function () {
   next();
 })
 
-$("#five").click(function () {
+$("#five").click(function() {
   var type = $("#type").val();
   var preValue = $("#" + type).val();
   if (q_list[q_list_ran[num]]["rev"] == 0) {
-    $("#" + type).val(parseInt(preValue) - 2 );
+    $("#" + type).val(parseInt(preValue) - 2);
     console.log(parseInt(preValue) - 2);
   }
 
@@ -1250,7 +1250,7 @@ var A = 0,
   Fix3 = 0,
   D = 0,
   Fix4 = 0,
-	m4,
+  m4,
   numper = 0;
 
 
@@ -1280,8 +1280,8 @@ function next() {
     Fix1 = (50 / 18 * A);
     if (res == "BM_B") {
       $(".sub").attr('style', 'color:seagreen;');
-      $(".worker_bar").attr('style', 'width: '
-        + Fix1.toFixed(0) + '%;background-color:seagreen;');
+      $(".worker_bar").attr('style', 'width: ' +
+        Fix1.toFixed(0) + '%;background-color:seagreen;');
       $(".worker_bar").html(Fix1.toFixed(0) / 2 + '%');
     }
     Fix1 = 50 - (50 / 18 * A);
@@ -1290,8 +1290,8 @@ function next() {
       $(".sub2").attr('style', 'color:seagreen;');
       $(".left-bar").attr('class', 'right-bar');
       $(".worker_bar").attr('class', 'worker_bar_right');
-      $(".worker_bar_right").attr('style', 'width: '
-        + Fix1.toFixed(0) + '%;background-color:seagreen;');
+      $(".worker_bar_right").attr('style', 'width: ' +
+        Fix1.toFixed(0) + '%;background-color:seagreen;');
       $(".worker_bar_right").html(Fix1.toFixed(0) / 2 + '%');
     }
 
@@ -1376,125 +1376,110 @@ function next() {
     $(".explain12").html(A_list[res12]["explain"]);
     ($("#SL").val() <= 5) ? res13 += "SL_L": res13 += "SL_S";
     $(".explain13").html(A_list[res13]["explain"]);
-    console.log(A + res + Fix1.toFixed(0) + B + res3 + Fix2.toFixed(0) + C + res7
-      + Fix3.toFixed(0) + D + res11 + Fix4.toFixed(0));
+    console.log(A + res + Fix1.toFixed(0) + B + res3 + Fix2.toFixed(0) + C + res7 +
+      Fix3.toFixed(0) + D + res11 + Fix4.toFixed(0));
 
-	if(res=="BM_B" && res3=="CM_C" && res7=="EI_E" && res11=="SG_S"){
-		$(".nn").html(n_list["n1"]["name"]);
-   $(".img").attr('src', './img/EODP.png";');
-  $(".result").css("background-color", "#ffde60");
-  $(".result1").css("background-color", "#ffde60");
+    if (res == "BM_B" && res3 == "CM_C" && res7 == "EI_E" && res11 == "SG_S") {
+      $(".nn").html(n_list["n1"]["name"]);
+      $(".img").attr('src', './img/EODP.png";');
+      $(".result").css("background-color", "#ffde60");
+      $(".result1").css("background-color", "#ffde60");
 
-		m4= new M4BT(n_list["n1"]["name"]);
+      m4 = new M4BT(n_list["n1"]["name"]);
 
-	}
-	  else if(res=="BM_B" && res3=="CM_C" && res7=="EI_E" && res11=="SG_G"){
-		$(".nn1").html(n_list["n2"]["name"]);
-  $(".img").attr('src', './img/ESDP.png";');
-$(".result").css("background-color", "#d25656");
-$(".result1").css("background-color", "#d25656");
-		  m4= new M4BT(n_list["n2"]["name"]);
-	}
-	   else if(res=="BM_B" && res3=="CM_C" && res7=="EI_I" && res11=="SG_S"){
-		$(".nn1").html(n_list["n3"]["name"]);
-   $(".img").attr('src', './img/IODP.png";');
-$(".result").css("background-color", "#f6aca3");
-$(".result1").css("background-color", "#f6aca3");
-		   m4= new M4BT(n_list["n3"]["name"]);
-	}
-	   else if(res=="BM_B" && res3=="CM_C" && res7=="EI_I" && res11=="SG_G"){
-		$(".nn1").html(n_list["n4"]["name"]);
-   $(".img").attr('src', './img/ISDP.png";');
-$(".result").css("background-color", "#bc8f8f");
-$(".result1").css("background-color", "#bc8f8f");
-		   m4= new M4BT(n_list["n4"]["name"]);
-	}
-	   else if(res=="BM_B" && res3=="CM_M" && res7=="EI_E" && res11=="SG_S"){
-		$(".nn1").html(n_list["n5"]["name"]);
-    $(".img").attr('src', './img/EOBP.png";');
-$(".result").css("background-color", "#faf3ea");
-$(".result1").css("background-color", "#faf3ea");
-		   m4= new M4BT(n_list["n5"]["name"]);
-	}
-	   else if(res=="BM_B" && res3=="CM_M" && res7=="EI_E" && res11=="SG_G"){
-		$(".nn1").html(n_list["n6"]["name"]);
-    $(".img").attr('src', './img/ESBP.png";');
-$(".result").css("background-color", "#519951");
-$(".result1").css("background-color", "#519951");
-		   m4= new M4BT(n_list["n6"]["name"]);
-	}
-	   else if(res=="BM_B" && res3=="CM_M" && res7=="EI_I" && res11=="SG_S"){
-		$(".nn1").html(n_list["n7"]["name"]);
-    $(".img").attr('src', './img/IOBP.png";');
-$(".result").css("background-color", "#b6e1d1");
-$(".result1").css("background-color", "#b6e1d1");
-		   m4= new M4BT(n_list["n7"]["name"]);
-	}
-	   else if(res=="BM_B" && res3=="CM_M" && res7=="EI_I" && res11=="SG_G"){
-		$(".nn1").html(n_list["n8"]["name"]);
-    $(".img").attr('src', './img/ISBP.png";');
-  $(".result").css("background-color", "#f6e6ff");
-  $(".result1").css("background-color", "#f6e6ff");
-		   m4= new M4BT(n_list["n8"]["name"]);
-	}
-	   else if(res=="BM_M" && res3=="CM_C" && res7=="EI_E" && res11=="SG_S"){
-		$(".nn1").html(n_list["n9"]["name"]);
-   $(".img").attr('src', './img/EODR.png";');
-$(".result").css("background-color", "#ff723e");
-$(".result1").css("background-color", "#ff723e");
-		   m4= new M4BT(n_list["n9"]["name"]);
-	}
-	   else if(res=="BM_M" && res3=="CM_C" && res7=="EI_E" && res11=="SG_G"){
-		$(".nn1").html(n_list["n10"]["name"]);
-     $(".img").attr('src', './img/ESDR.png";');
-$(".result").css("background-color", "#e78dbc");
-$(".result1").css("background-color", "#e78dbc");
-		   m4= new M4BT(n_list["n10"]["name"]);
-	}
-	   else if(res=="BM_M" && res3=="CM_C" && res7=="EI_I" && res11=="SG_S"){
-		$(".nn1").html(n_list["n11"]["name"]);
-     $(".img").attr('src', './img/IODR.png";');
-$(".result").css("background-color", "#c0c0c0");
-$(".result1").css("background-color", "#c0c0c0");
-		   m4= new M4BT(n_list["n11"]["name"]);
-	}
-	   else if(res=="BM_M" && res3=="CM_C" && res7=="EI_I" && res11=="SG_G"){
-		$(".nn1").html(n_list["n12"]["name"]);
-  $(".img").attr('src', './img/ISDR.png";');
-  $(".result").css("background-color", "#708090");
-  $(".result1").css("background-color", "#708090");
-		   m4= new M4BT(n_list["n12"]["name"]);
-	}
-	   else if(res=="BM_M" && res3=="CM_M" && res7=="EI_E" && res11=="SG_S"){
-		$(".nn1").html(n_list["n13"]["name"]);
-   $(".img").attr('src', './img/EOBR.png";');
-  $(".result").css("background-color", "#9F58e1");
-  $(".result1").css("background-color", "#9F58e1");
-		   m4= new M4BT(n_list["n13"]["name"]);
-	}
-      else if(res=="BM_M" && res3=="CM_M" && res7=="EI_E" && res11=="SG_G"){
-		$(".nn1").html(n_list["n14"]["name"]);
-   $(".img").attr('src', './img/ESBR.png";');
-  $(".result").css("background-color", "#40e0d0");
-  $(".result1").css("background-color", "#40e0d0");
-		m4= new M4BT(n_list["n14"]["name"]);
-	}
-     else if(res=="BM_M" && res3=="CM_M" && res7=="EI_I" && res11=="SG_S"){
-		$(".nn1").html(n_list["n15"]["name"]);
-    $(".img").attr('src', './img/IOBR.png";');
-  $(".result").css("background-color", "#6495ed");
-  $(".result1").css("background-color", "#6495ed");
-		   m4= new M4BT(n_list["n15"]["name"]);
-	}
-	   else if(res=="BM_M" && res3=="CM_M" && res7=="EI_I" && res11=="SG_G"){
-		$(".nn1").html(n_list["n16"]["name"]);
+    } else if (res == "BM_B" && res3 == "CM_C" && res7 == "EI_E" && res11 == "SG_G") {
+      $(".nn1").html(n_list["n2"]["name"]);
+      $(".img").attr('src', './img/ESDP.png";');
+      $(".result").css("background-color", "#d25656");
+      $(".result1").css("background-color", "#d25656");
+      m4 = new M4BT(n_list["n2"]["name"]);
+    } else if (res == "BM_B" && res3 == "CM_C" && res7 == "EI_I" && res11 == "SG_S") {
+      $(".nn1").html(n_list["n3"]["name"]);
+      $(".img").attr('src', './img/IODP.png";');
+      $(".result").css("background-color", "#f6aca3");
+      $(".result1").css("background-color", "#f6aca3");
+      m4 = new M4BT(n_list["n3"]["name"]);
+    } else if (res == "BM_B" && res3 == "CM_C" && res7 == "EI_I" && res11 == "SG_G") {
+      $(".nn1").html(n_list["n4"]["name"]);
+      $(".img").attr('src', './img/ISDP.png";');
+      $(".result").css("background-color", "#bc8f8f");
+      $(".result1").css("background-color", "#bc8f8f");
+      m4 = new M4BT(n_list["n4"]["name"]);
+    } else if (res == "BM_B" && res3 == "CM_M" && res7 == "EI_E" && res11 == "SG_S") {
+      $(".nn1").html(n_list["n5"]["name"]);
+      $(".img").attr('src', './img/EOBP.png";');
+      $(".result").css("background-color", "#faf3ea");
+      $(".result1").css("background-color", "#faf3ea");
+      m4 = new M4BT(n_list["n5"]["name"]);
+    } else if (res == "BM_B" && res3 == "CM_M" && res7 == "EI_E" && res11 == "SG_G") {
+      $(".nn1").html(n_list["n6"]["name"]);
+      $(".img").attr('src', './img/ESBP.png";');
+      $(".result").css("background-color", "#519951");
+      $(".result1").css("background-color", "#519951");
+      m4 = new M4BT(n_list["n6"]["name"]);
+    } else if (res == "BM_B" && res3 == "CM_M" && res7 == "EI_I" && res11 == "SG_S") {
+      $(".nn1").html(n_list["n7"]["name"]);
+      $(".img").attr('src', './img/IOBP.png";');
+      $(".result").css("background-color", "#b6e1d1");
+      $(".result1").css("background-color", "#b6e1d1");
+      m4 = new M4BT(n_list["n7"]["name"]);
+    } else if (res == "BM_B" && res3 == "CM_M" && res7 == "EI_I" && res11 == "SG_G") {
+      $(".nn1").html(n_list["n8"]["name"]);
+      $(".img").attr('src', './img/ISBP.png";');
+      $(".result").css("background-color", "#f6e6ff");
+      $(".result1").css("background-color", "#f6e6ff");
+      m4 = new M4BT(n_list["n8"]["name"]);
+    } else if (res == "BM_M" && res3 == "CM_C" && res7 == "EI_E" && res11 == "SG_S") {
+      $(".nn1").html(n_list["n9"]["name"]);
+      $(".img").attr('src', './img/EODR.png";');
+      $(".result").css("background-color", "#ff723e");
+      $(".result1").css("background-color", "#ff723e");
+      m4 = new M4BT(n_list["n9"]["name"]);
+    } else if (res == "BM_M" && res3 == "CM_C" && res7 == "EI_E" && res11 == "SG_G") {
+      $(".nn1").html(n_list["n10"]["name"]);
+      $(".img").attr('src', './img/ESDR.png";');
+      $(".result").css("background-color", "#e78dbc");
+      $(".result1").css("background-color", "#e78dbc");
+      m4 = new M4BT(n_list["n10"]["name"]);
+    } else if (res == "BM_M" && res3 == "CM_C" && res7 == "EI_I" && res11 == "SG_S") {
+      $(".nn1").html(n_list["n11"]["name"]);
+      $(".img").attr('src', './img/IODR.png";');
+      $(".result").css("background-color", "#c0c0c0");
+      $(".result1").css("background-color", "#c0c0c0");
+      m4 = new M4BT(n_list["n11"]["name"]);
+    } else if (res == "BM_M" && res3 == "CM_C" && res7 == "EI_I" && res11 == "SG_G") {
+      $(".nn1").html(n_list["n12"]["name"]);
+      $(".img").attr('src', './img/ISDR.png";');
+      $(".result").css("background-color", "#708090");
+      $(".result1").css("background-color", "#708090");
+      m4 = new M4BT(n_list["n12"]["name"]);
+    } else if (res == "BM_M" && res3 == "CM_M" && res7 == "EI_E" && res11 == "SG_S") {
+      $(".nn1").html(n_list["n13"]["name"]);
+      $(".img").attr('src', './img/EOBR.png";');
+      $(".result").css("background-color", "#9F58e1");
+      $(".result1").css("background-color", "#9F58e1");
+      m4 = new M4BT(n_list["n13"]["name"]);
+    } else if (res == "BM_M" && res3 == "CM_M" && res7 == "EI_E" && res11 == "SG_G") {
+      $(".nn1").html(n_list["n14"]["name"]);
+      $(".img").attr('src', './img/ESBR.png";');
+      $(".result").css("background-color", "#40e0d0");
+      $(".result1").css("background-color", "#40e0d0");
+      m4 = new M4BT(n_list["n14"]["name"]);
+    } else if (res == "BM_M" && res3 == "CM_M" && res7 == "EI_I" && res11 == "SG_S") {
+      $(".nn1").html(n_list["n15"]["name"]);
+      $(".img").attr('src', './img/IOBR.png";');
+      $(".result").css("background-color", "#6495ed");
+      $(".result1").css("background-color", "#6495ed");
+      m4 = new M4BT(n_list["n15"]["name"]);
+    } else if (res == "BM_M" && res3 == "CM_M" && res7 == "EI_I" && res11 == "SG_G") {
+      $(".nn1").html(n_list["n16"]["name"]);
       $(".img").attr('src', './img/ISBR.png;');
-		   m4= new M4BT(n_list["n16"]["name"]);
+      m4 = new M4BT(n_list["n16"]["name"]);
       $(".result").css("background-color", "#f5deb3");
       $(".result1").css("background-color", "#f5deb3");
-	}
+    }
 
-	  console.log(Last_data);
+    console.log(Last_data);
 
   } else {
 
