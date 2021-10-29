@@ -1381,108 +1381,109 @@ function next() {
 
 	if(res=="BM_B" && res3=="CM_C" && res7=="EI_E" && res11=="SG_S"){
 		$(".nn").html(n_list["n1"]["name"]);
-  //  $(".img").attr('src', './img/EODP.png";');
-  //  $(".result").attr('style', 'color:#ffde60;');
-  //  $(".result1").attr('style', 'color:#ffde60;');
+   $(".img").attr('src', './img/EODP.png";');
+  $(".result").css("background-color", "#ffde60");
+  $(".result1").css("background-color", "#ffde60");
+
 		m4= new M4BT(n_list["n1"]["name"]);
 
 	}
 	  else if(res=="BM_B" && res3=="CM_C" && res7=="EI_E" && res11=="SG_G"){
 		$(".nn1").html(n_list["n2"]["name"]);
-//    $(".img").attr('src', './img/ESDP.png";');
-//    $(".result").attr('style', 'color:#d25656;');
-  //  $(".result1").attr('style', 'color:#d25656;');
+  $(".img").attr('src', './img/ESDP.png";');
+$(".result").css("background-color", "#d25656");
+$(".result1").css("background-color", "#d25656");
 		  m4= new M4BT(n_list["n2"]["name"]);
 	}
 	   else if(res=="BM_B" && res3=="CM_C" && res7=="EI_I" && res11=="SG_S"){
 		$(".nn1").html(n_list["n3"]["name"]);
-//    $(".img").attr('src', './img/IODP.png";');
-  //  $(".result").attr('style', 'color:#f6aca3;');
-  //  $(".result1").attr('style', 'color:#f6aca3;');
+   $(".img").attr('src', './img/IODP.png";');
+$(".result").css("background-color", "#f6aca3");
+$(".result1").css("background-color", "#f6aca3");
 		   m4= new M4BT(n_list["n3"]["name"]);
 	}
 	   else if(res=="BM_B" && res3=="CM_C" && res7=="EI_I" && res11=="SG_G"){
 		$(".nn1").html(n_list["n4"]["name"]);
-//    $(".img").attr('src', './img/ISDP.png";');
-//    $(".result").attr('style', 'color:#bc8f8f;');
-  //  $(".result1").attr('style', 'color:#bc8f8f;');
+   $(".img").attr('src', './img/ISDP.png";');
+$(".result").css("background-color", "#bc8f8f");
+$(".result1").css("background-color", "#bc8f8f");
 		   m4= new M4BT(n_list["n4"]["name"]);
 	}
 	   else if(res=="BM_B" && res3=="CM_M" && res7=="EI_E" && res11=="SG_S"){
 		$(".nn1").html(n_list["n5"]["name"]);
-//    $(".img").attr('src', './img/EOBP.png";');
-  //  $(".result").attr('style', 'color:#faf3ea;');
-  //  $(".result1").attr('style', 'color:#faf3ea;');
+    $(".img").attr('src', './img/EOBP.png";');
+$(".result").css("background-color", "#faf3ea");
+$(".result1").css("background-color", "#faf3ea");
 		   m4= new M4BT(n_list["n5"]["name"]);
 	}
 	   else if(res=="BM_B" && res3=="CM_M" && res7=="EI_E" && res11=="SG_G"){
 		$(".nn1").html(n_list["n6"]["name"]);
-//    $(".img").attr('src', './img/ESBP.png";');
-//    $(".result").attr('style', 'color:#519951;');
-//    $(".result1").attr('style', 'color:#519951;');
+    $(".img").attr('src', './img/ESBP.png";');
+$(".result").css("background-color", "#519951");
+$(".result1").css("background-color", "#519951");
 		   m4= new M4BT(n_list["n6"]["name"]);
 	}
 	   else if(res=="BM_B" && res3=="CM_M" && res7=="EI_I" && res11=="SG_S"){
 		$(".nn1").html(n_list["n7"]["name"]);
-//    $(".img").attr('src', './img/IOBP.png";');
-//    $(".result").attr('style', 'color:#b6e1d1;');
-//    $(".result1").attr('style', 'color:#b6e1d1;');
+    $(".img").attr('src', './img/IOBP.png";');
+$(".result").css("background-color", "#b6e1d1");
+$(".result1").css("background-color", "#b6e1d1");
 		   m4= new M4BT(n_list["n7"]["name"]);
 	}
 	   else if(res=="BM_B" && res3=="CM_M" && res7=="EI_I" && res11=="SG_G"){
 		$(".nn1").html(n_list["n8"]["name"]);
-  //  $(".img").attr('src', './img/ISBP.png";');
-  //  $(".result").attr('style', 'color:#f6e6ff;');
-  //  $(".result1").attr('style', 'color:#f6e6ff;');
+    $(".img").attr('src', './img/ISBP.png";');
+  $(".result").css("background-color", "#f6e6ff");
+  $(".result1").css("background-color", "#f6e6ff");
 		   m4= new M4BT(n_list["n8"]["name"]);
 	}
 	   else if(res=="BM_M" && res3=="CM_C" && res7=="EI_E" && res11=="SG_S"){
 		$(".nn1").html(n_list["n9"]["name"]);
-//    $(".img").attr('src', './img/EODR.png";');
-  //  $(".result").attr('style', 'color:#ff723e;');
-  //  $(".result1").attr('style', 'color:#ff723e;');
+   $(".img").attr('src', './img/EODR.png";');
+$(".result").css("background-color", "#ff723e");
+$(".result1").css("background-color", "#ff723e");
 		   m4= new M4BT(n_list["n9"]["name"]);
 	}
 	   else if(res=="BM_M" && res3=="CM_C" && res7=="EI_E" && res11=="SG_G"){
 		$(".nn1").html(n_list["n10"]["name"]);
-//      $(".img").attr('src', './img/ESDR.png";');
-//    $(".result").attr('style', 'color:#e78dbc;');
-  //  $(".result1").attr('style', 'color:#e78dbc;');
+     $(".img").attr('src', './img/ESDR.png";');
+$(".result").css("background-color", "#e78dbc");
+$(".result1").css("background-color", "#e78dbc");
 		   m4= new M4BT(n_list["n10"]["name"]);
 	}
 	   else if(res=="BM_M" && res3=="CM_C" && res7=="EI_I" && res11=="SG_S"){
 		$(".nn1").html(n_list["n11"]["name"]);
-//      $(".img").attr('src', './img/IODR.png";');
-//    $(".result").attr('style', 'color:#c0c0c0;');
-  //  $(".result1").attr('style', 'color:#c0c0c0;');
+     $(".img").attr('src', './img/IODR.png";');
+$(".result").css("background-color", "#c0c0c0");
+$(".result1").css("background-color", "#c0c0c0");
 		   m4= new M4BT(n_list["n11"]["name"]);
 	}
 	   else if(res=="BM_M" && res3=="CM_C" && res7=="EI_I" && res11=="SG_G"){
 		$(".nn1").html(n_list["n12"]["name"]);
-  //    $(".img").attr('src', './img/ISDR.png";');
-  //  $(".result").attr('style', 'color:#708090;');
-  //  $(".result1").attr('style', 'color:#708090;');
+  $(".img").attr('src', './img/ISDR.png";');
+  $(".result").css("background-color", "#708090");
+  $(".result1").css("background-color", "#708090");
 		   m4= new M4BT(n_list["n12"]["name"]);
 	}
 	   else if(res=="BM_M" && res3=="CM_M" && res7=="EI_E" && res11=="SG_S"){
 		$(".nn1").html(n_list["n13"]["name"]);
-  //    $(".img").attr('src', './img/EOBR.png";');
-  //  $(".result").attr('style', 'color:#9F58e1;');
-  //  $(".result1").attr('style', 'color:#9f58e1;');
+   $(".img").attr('src', './img/EOBR.png";');
+  $(".result").css("background-color", "#9F58e1");
+  $(".result1").css("background-color", "#9F58e1");
 		   m4= new M4BT(n_list["n13"]["name"]);
 	}
       else if(res=="BM_M" && res3=="CM_M" && res7=="EI_E" && res11=="SG_G"){
 		$(".nn1").html(n_list["n14"]["name"]);
-  //    $(".img").attr('src', './img/ESBR.png";');
-  //  $(".result").attr('style', 'color:#40e0d0');
-  //  $(".result1").attr('style', 'color:#40e0d0;');
+   $(".img").attr('src', './img/ESBR.png";');
+  $(".result").css("background-color", "#40e0d0");
+  $(".result1").css("background-color", "#40e0d0");
 		m4= new M4BT(n_list["n14"]["name"]);
 	}
      else if(res=="BM_M" && res3=="CM_M" && res7=="EI_I" && res11=="SG_S"){
 		$(".nn1").html(n_list["n15"]["name"]);
-  //    $(".img").attr('src', './img/IOBR.png";');
-  //  $(".result").attr('style', 'color:#6495ed;');
-  //  $(".result1").attr('style', 'color:#6496ed;');
+    $(".img").attr('src', './img/IOBR.png";');
+  $(".result").css("background-color", "#6495ed");
+  $(".result1").css("background-color", "#6495ed");
 		   m4= new M4BT(n_list["n15"]["name"]);
 	}
 	   else if(res=="BM_M" && res3=="CM_M" && res7=="EI_I" && res11=="SG_G"){
@@ -1490,7 +1491,7 @@ function next() {
       $(".img").attr('src', './img/ISBR.png;');
 		   m4= new M4BT(n_list["n16"]["name"]);
       $(".result").css("background-color", "#f5deb3");
-      // $(".result1").attr('style', 'background-color:#f5deb3;');
+      $(".result1").css("background-color", "#f5deb3");
 	}
 
 	  console.log(Last_data);
