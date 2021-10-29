@@ -1489,8 +1489,8 @@ function next() {
 		$(".nn1").html(n_list["n16"]["name"]);
     //  $(".img").attr('src', './img/ISBR.png;');
 		   m4= new M4BT(n_list["n16"]["name"]);
-       $(".result").attr('style', 'background-color:blueviolet;');
-       $(".result1").attr('style', 'background-color:#f5deb3;');
+       $(".result").attr('style', 'background-color:#f5deb3');
+       $(".result1").attr('style', 'background-color:#f5deb3');
 	}
 
 	  console.log(Last_data);
