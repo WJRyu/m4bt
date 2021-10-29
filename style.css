@@ -469,6 +469,7 @@ input[type="radio"][name="child-gen6"], input[type="radio"][name="options"]{
   max-width: 600px;
   justify-content: center;
   margin: 0 auto;
+  background-color: lavender;
   padding-bottom: 20px;
 }
 .tbt-total {
