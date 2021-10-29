@@ -1277,14 +1277,14 @@ function next() {
     $(".yap1").html(A_list[res]["name"]);
     $(".explain").html(A_list[res]["explain"]);
     A = $("#BM").val();
-    Fix1 = (100 / 18 * A);
+    Fix1 = (50 / 18 * A);
     if (res == "BM_B") {
       $(".sub").attr('style', 'color:seagreen;');
       $(".worker_bar").attr('style', 'width: '
         + Fix1.toFixed(0) + '%;background-color:seagreen;');
       $(".worker_bar").html(Fix1.toFixed(0) / 2 + '%');
     }
-    Fix1 = 100 - (100 / 18 * A);
+    Fix1 = 50 - (50 / 18 * A);
 
     if (res == "BM_M") {
       $(".sub2").attr('style', 'color:seagreen;');
@@ -1305,13 +1305,13 @@ function next() {
     $(".explain3").html(A_list[res3]["explain"]);
     B = $("#CM").val();
     console.log(B);
-    Fix2 = (100 / 22 * B);
+    Fix2 = (50 / 22 * B);
     if (res3 == "CM_C") {
       $(".sub_1").attr('style', 'color:salmon;');
       $(".baby_bar").attr('style', 'width: ' + Fix2.toFixed(0) + '%;background-color:salmon;');
       $(".baby_bar").html(Fix2.toFixed(0) / 2 + '%');
     }
-    Fix2 = 100 - (100 / 22 * B);
+    Fix2 = 50 - (50 / 22 * B);
     console.log(Fix2);
     if (res3 == "CM_M") {
       $(".sub2_1").attr('style', 'color:salmon;');
@@ -1332,14 +1332,14 @@ function next() {
     $(".yap3").html(A_list[res7]["name"]);
     $(".explain7").html(A_list[res7]["explain"]);
     C = $("#EI").val();
-    Fix3 = 100 / 26 * C;
+    Fix3 = 50 / 26 * C;
     if (res7 == "EI_E") {
       $(".sub_2").attr('style', 'color:mediumslateblue;');
       $(".right-bar2").attr('class', 'left-bar2');
       $(".ego_bar").attr('style', 'width: ' + Fix3.toFixed(0) + '%;background-color:mediumslateblue;');
       $(".ego_bar").html(Fix3.toFixed(0) / 2 + '%');
     }
-    Fix3 = 100 - (100 / 26 * C);
+    Fix3 = 50 - (50 / 26 * C);
     if (res7 == "EI_I") {
       $(".sub2_2").attr('style', 'color:mediumslateblue;');
       $(".right-bar2").attr('class', 'right-bar');
@@ -1358,14 +1358,14 @@ function next() {
     $(".yap4").html(A_list[res11]["name"]);
     $(".explain11").html(A_list[res11]["explain"]);
     D = $("#SG").val();
-    Fix4 = 100 / 22 * D;
+    Fix4 = 50 / 22 * D;
     if (res11 == "SG_S") {
       $(".sub_3").attr('style', 'color:orange;');
       $(".right-bar3").attr('class', 'left-bar3');
       $(".relation_bar").attr('style', 'width: ' + Fix4.toFixed(0) + '%;background-color:orange;');
       $(".relation_bar").html(Fix4.toFixed(0) / 2 + '%');
     }
-    Fix4 = 100 - (100 / 22 * D);
+    Fix4 = 50 - (50 / 22 * D);
     if (res11 == "SG_G") {
       $(".sub2_3").attr('style', 'color:orange;');
       $(".relation_bar").attr('class', 'relation_bar_right');
