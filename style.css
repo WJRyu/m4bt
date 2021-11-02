@@ -653,6 +653,7 @@ input[type="radio"][name="child-gen6"], input[type="radio"][name="options"]{
 .btn-outline-success:hover {
   background-color: #3c5661;
   color: white;
+  border-color: #3c5661;
 }
 
 
