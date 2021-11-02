@@ -646,6 +646,11 @@ input[type="radio"][name="child-gen6"], input[type="radio"][name="options"]{
   margin-top: 1rem;
 }
 
+.btn-outline-success {
+  color : #3c5661;
+  border-color: #3c5661;
+}
+
 
 .share {
   margin: 0 auto;
