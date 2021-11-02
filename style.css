@@ -111,14 +111,14 @@ header {
   margin-right: auto;
 }
 .surv-name {
-  width: 80px;
+  width: 90px;
   font-size: 1rem;
   flex-shrink: 1.5;
 
 }
 
 .surv-name1 {
-  width: 85px;
+  width: 90px;
   font-size: 1rem;
   flex-shrink: 1.5;
 
