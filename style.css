@@ -14,6 +14,7 @@ header {
   margin: 0rem auto;
   width: 100%;
   height: auto;
+  padding-bottom: 5rem;
 }
 .btn-next {
   width: 45%;
@@ -317,7 +318,6 @@ input[type="radio"][name="child-gen6"], input[type="radio"][name="options"]{
   padding: 1rem 0rem;
   border-bottom: 1px white;
   opacity: 1;
-  height: auto;
 }
 .question-box {
   text-align: center;
