@@ -665,6 +665,10 @@ input[type="radio"][name="child-gen6"], input[type="radio"][name="options"]{
   align-items: center;
 }
 
+.btn-girl{
+  border-top-right-radius: .25rem;
+  border-bottom-right-radius: .25rem;
+}
 
 .share {
   margin: 0 auto;
