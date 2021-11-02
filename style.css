@@ -32,7 +32,7 @@ header {
   padding: 1rem 1rem;
   z-index: 2000;
   background-color: white;
-  box-shadow: 0px 3px 3px 10px gray;
+  box-shadow: 0px 1px 3px 10px gray;
 }
 .starter-content {
   display: flex;
