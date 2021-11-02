@@ -334,6 +334,7 @@ input[type="radio"][name="child-gen6"], input[type="radio"][name="options"]{
   align-items: center;
   display: flex;
   justify-content: center;
+  padding: 2rem 2rem;
 }
 .option {
   display: flex;
@@ -637,8 +638,8 @@ input[type="radio"][name="child-gen6"], input[type="radio"][name="options"]{
 }
 
 .img1{
-  width: 20rem;
-  height: 20rem;
+  width: 15rem;
+  height: 15rem;
   justify-content: center;
   margin: 0 auto;
 }
