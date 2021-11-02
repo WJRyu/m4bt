@@ -327,7 +327,9 @@ input[type="radio"][name="child-gen6"], input[type="radio"][name="options"]{
   margin-top: 1rem;
 }
 .question-content {
-  height: 80px;
+  height: 20rem;
+  background-color: antiquewhite;
+  border-radius: 10px;
   align-content: center;
   align-items: center;
   display: flex;
