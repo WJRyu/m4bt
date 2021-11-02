@@ -633,8 +633,8 @@ input[type="radio"][name="child-gen6"], input[type="radio"][name="options"]{
 }
 
 .img1{
-  width: 200px;
-  height: 200px;
+  width: 400px;
+  height: 400px;
   justify-content: center;
   margin: 0 auto;
 }
@@ -643,6 +643,7 @@ input[type="radio"][name="child-gen6"], input[type="radio"][name="options"]{
   justify-content: center;
   margin: 0 auto;
   display: flex;
+  margin-top: 1%;
 }
 
 
