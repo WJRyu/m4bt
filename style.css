@@ -7,6 +7,12 @@ header {
   position: sticky;
   top: 0px;
 }
+
+a:link {
+  text-decoration-line: none;
+  color: none;
+}
+
 .question {
   display: flex;
   flex-direction: column;
