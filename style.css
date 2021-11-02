@@ -66,7 +66,7 @@ header {
   margin: 0 auto;
   font-size: 1rem;
   padding: 1rem;
-  background-color: white;
+  background-color: #f4e8ce;
   font-size: 1.1rem;
   line-height: 2.0rem;
   font-family: 'Nanum Gothic', sans-serif;
@@ -437,7 +437,7 @@ input[type="radio"][name="child-gen6"], input[type="radio"][name="options"]{
   display: flex;
   flex-direction: column;
   margin-top: 50px;
-  background-color: #f4e8ce;
+  background-color: white;
 }
 .second {
   display: none;
@@ -633,6 +633,7 @@ input[type="radio"][name="child-gen6"], input[type="radio"][name="options"]{
 
 .img1{
   width: 150px;
+  height: 150px;
   justify-content: center;
   margin: 0 auto;;
   display: flex;
