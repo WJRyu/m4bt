@@ -637,8 +637,8 @@ input[type="radio"][name="child-gen6"], input[type="radio"][name="options"]{
 }
 
 .img1{
-  width: 400px;
-  height: 400px;
+  width: 20rem;
+  height: 20rem;
   justify-content: center;
   margin: 0 auto;
 }
