@@ -437,7 +437,7 @@ input[type="radio"][name="child-gen6"], input[type="radio"][name="options"]{
   display: flex;
   flex-direction: column;
   margin-top: 50px;
-  background-color: white;
+  background-color: #f4e8ce;
 }
 .second {
   display: none;
