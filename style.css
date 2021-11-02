@@ -645,8 +645,8 @@ input[type="radio"][name="child-gen6"], input[type="radio"][name="options"]{
   margin: 0 auto;
   display: flex;
   margin-top: 2.5rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .btn-outline-success {
