@@ -630,6 +630,14 @@ input[type="radio"][name="child-gen6"], input[type="radio"][name="options"]{
   margin: 0 auto;
   display: flex;
 }
+
+.img1{
+  width: 150px;
+  justify-content: center;
+  margin: 0 auto;;
+  display: flex;
+}
+
 .share {
   margin: 0 auto;
   display: flex;
