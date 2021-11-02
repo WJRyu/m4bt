@@ -636,8 +636,14 @@ input[type="radio"][name="child-gen6"], input[type="radio"][name="options"]{
   height: 150px;
   justify-content: center;
   margin: 0 auto;
-  
 }
+
+.ex{
+  justify-content: center;
+  margin: 0 auto;
+  display: flex;
+}
+
 
 .share {
   margin: 0 auto;
