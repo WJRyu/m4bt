@@ -76,7 +76,8 @@ header {
 .surv-list {
   margin-top: 2rem;
   max-width: 700px;
-  background-color: aliceblue;
+  background-color: #f4e8ce;
+  border-radius: 15px;
   padding: 1rem 1rem;
   display: flex;
   flex-direction: column;
@@ -84,10 +85,11 @@ header {
   margin-left: auto;
   margin-right: auto;
 }
- .why-test, .last-edu, .job_site, .name, .child, .area, .job, .age {
+ .why-test, .last-edu,.job_satis, .job_site, .name, .child, .area, .job, .age {
   display: flex;
   justify-content: flex-start;
   padding: 0.5rem;
+  height: 3rem;
 
   }
 
