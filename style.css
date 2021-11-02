@@ -661,6 +661,10 @@ input[type="radio"][name="child-gen6"], input[type="radio"][name="options"]{
   border-color: #3c5661;
 }
 
+.btn-group {
+  align-items: center;
+}
+
 
 .share {
   margin: 0 auto;
