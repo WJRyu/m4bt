@@ -12,6 +12,18 @@ a:link {
   text-decoration-line: none;
   color: none;
 }
+a:visited {
+  text-decoration-line: none;
+  color: none;
+}
+a:hover {
+  text-decoration-line: none;
+  color: none;
+}
+a:active {
+  text-decoration-line: none;
+  color: none;
+}
 
 .question {
   display: flex;
