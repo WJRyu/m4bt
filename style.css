@@ -88,8 +88,8 @@ header {
  .why-test, .last-edu,.job_satis, .job_site, .name, .child, .area, .job, .age {
   display: flex;
   justify-content: flex-start;
-  padding: 0.5rem;
-  height: 3rem;
+  padding: 1rem;
+  height: auto;
 
   }
 
@@ -101,7 +101,6 @@ header {
 .job_satis{
 	display: flex;
   justify-content: flex-start;
-  padding: 0.5rem;
 	align-items: center;
 }
 .frm {
