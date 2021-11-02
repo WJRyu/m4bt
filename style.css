@@ -643,7 +643,7 @@ input[type="radio"][name="child-gen6"], input[type="radio"][name="options"]{
   justify-content: center;
   margin: 0 auto;
   display: flex;
-  margin-top: 1%;
+  margin-top: 1rem;
 }
 
 
